@@ -18,33 +18,41 @@ public class Ejercicio4 {
 
     /**
      * Precondición: solo se pueden pasar por el argumento 0 o 1, ningún otro número
-     * @param numero
-     * @return
+     *
+     * Metodo que devolverá false si
+     * @param numero es igual a 1 y true si es igual a 0
+     * @return verdadero o falso segun el numero introducido
      */
     public static boolean parseToBoolean(int numero){
-        boolean resultado = false;
-        if (numero==0){
-            resultado=true;
-        }else if (numero==1){
-            resultado=false;
+        //Declaramos las variables
+        boolean resultado = false;  //Variable que usaremos para devolver el resultado segun lo introducido por parametros
+
+        if (numero==0){         //Si el numero introducido por parámetros es igual a 0
+            resultado=true;     //La varaible resultado es igual a true
+        }else if (numero==1){   //Si el numero introducido por parámetros es igual a 1
+            resultado=false;    //La varaible resultado es igual a false
         }
 
-        return resultado;
+        return resultado;       //Devolvemos la variable resultado
     }
 
     /**
      * Precondición: solo se puede pasar por argumento una cadena de texto "true" o "false", ninguna otra
-     * @param cadena
-     * @return
+     *
+     * Metodo que devolverá false si
+     * @param cadena es igual a "false" y true si es igual a "true"
+     * @return verdadero o falso segun la cadena de texto introducida
      */
     public static boolean parseToBoolean(String cadena){
-        boolean resultado=false;
-        if (cadena.equals("false")){
-            resultado=false;
-        }else if (cadena.equals("true")){
-            resultado=true;
+        //Declaramos las variables
+        boolean resultado = false;  //Variable que usaremos para devolver el resultado segun lo introducido por parametros
+
+        if (cadena.equals("false")){        //Si la cadena introducida por parámetros es igual a "false"
+            resultado=false;                //La variable resultado es igual a false
+        }else if (cadena.equals("true")){   //Si la cadena introducida por parámetros es igual a "true"
+            resultado=true;                 //La variable resultado es igual a true
         }
 
-        return resultado;
+        return resultado;                   //Devolvemos la variable resultado
     }
 }

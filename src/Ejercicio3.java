@@ -16,19 +16,32 @@ public class Ejercicio3 {
         System.out.println("El resultado de la suma de los numeros de 3 a 9 es: "+ sumaEnteros(3, 9));
     }
 
+    /**
+     * Metodo que calculará la suma de los numeros desde 1 hasta
+     * @param numero que es un entero introducido por parámetros. Se devolverá
+     * @return la suma de los numeros
+     */
     public static int sumaEnteros(int numero){
-        int suma=0;
-        for (int i = 1; i <= numero ; i++) {
-             suma+=i;
+        //Declaramos las variables
+        int suma=0; //Variable donde guardaremos la suma de los numeros enteros
+        for (int i = 1; i <= numero ; i++) {    //Inicializamos el bucle en 1, lo finalizamos en el numero introducido por prametros, y lo incrementamos en 1
+             suma+=i;                           //Le vamos sumando a la varaible suma los numeros que van pasando
         }
-        return suma;
+        return suma;                            //Devolvemos la variable suma
     }
 
+    /**
+     * Metodo que calculará la suma de los numeros desde
+     * @param num1 hasta
+     * @param num2 que son enteros introducidos por parámetros. Se devolverá
+     * @return la suma de los numeros
+     */
     public static int sumaEnteros(int num1, int num2){
-        int suma=0;
-        for (int i = num1; i <=num2 ; i++) {
-            suma+=i;
+        //Declaramos las variables
+        int suma=0; //Variable donde guardaremos la suma de los numeros enteros
+        for (int i = num1; i <=num2 ; i++) {   //Inicializamos el bucle en 1, lo finalizamos en el numero introducido por prametros, y lo incrementamos en 1
+            suma+=i;                           //Le vamos sumando a la varaible suma los numeros que van pasando
         }
-        return suma;
+        return suma;                           //Devolvemos la variable suma
     }
 }

@@ -19,13 +19,19 @@ public class Ejercicio2 {
      * Metodo que calcula la media de
      * @param a y
      * @param b que son enteros introducidos por parámetros y se devuelve
-     * @return
+     * @return la media double de a y b
      */
     public static double media(int a, int b){
         double suma=a+b;
         return suma/2;
     }
 
+    /**
+     * Metodo que calcula la media de
+     * @param a y
+     * @param b que son doubles introducidos por parámetros y se devuelve
+     * @return la media doubles de a y b
+     */
     public static double media(double a, double b){
         return (a+b)/2;
     }

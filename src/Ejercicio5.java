@@ -23,16 +23,34 @@ public class Ejercicio5 {
      */
 
     public static void main(String[] args) {
-        System.out.println(numerosAleatorios(6));
+
+        numerosAleatorios(6);
+        System.out.println();
+        numerosAleatorios(3, 20);
+        System.out.println();
+        numerosAleatorios(5,20, 50);
     }
 
-    public static int numerosAleatorios(int cantidad){
+    public static void numerosAleatorios(int cantidad){
 
-        int numAleatorio =0;
-        for (int i = 1; i < cantidad; i++) {
-            numAleatorio=(int) (Math.random() * 2);
-            i = numAleatorio;
+        int numRandom=0;
+        for (int i = 0; i < cantidad; i++) {
+            System.out.println(numRandom = (int) (Math.random()*2));
         }
-        return numAleatorio;
+    }
+
+    public static void numerosAleatorios(int cantidad, int max){
+
+        int numRandom=0;
+        for (int i = 0; i < cantidad; i++) {
+            System.out.println(numRandom = (int) (Math.random()*max));
+        }
+    }
+
+    public static void numerosAleatorios(int cantidad, int min, int max){
+        int numRandom=0;
+        for (int i = 0; i < cantidad; i++) {
+            System.out.println(numRandom = (int) (Math.random() * (max - min) + min));
+        }
     }
 }
